@@ -14,7 +14,18 @@ def escalier(taille,nb):
 
     turtle.done()
 
-escalier(60,5)
+#escalier(60,5)
+
+def carre(taille):
+    t = turtle.Turtle()
+
+    for i in range (0, 4):
+        t.forward(taille)
+        t.left(90)
+    turtle.done()
+
+carre(50)
+
 
 #t.forward(100)
 #t.left(90)
