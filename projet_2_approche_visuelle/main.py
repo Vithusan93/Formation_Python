@@ -22,10 +22,22 @@ def carre(taille):
     for i in range (0, 4):
         t.forward(taille)
         t.left(90)
-    turtle.done()
 
-carre(50)
 
+#carre(50)
+
+
+
+def carres(taille_depart,nb):
+   
+    t = turtle.Turtle()
+    for i in range ( 0, nb ):  
+        taille = (i+1)*taille_depart
+        carre(taille) 
+    
+carres(30,4)
+    
+turtle.done()
 
 #t.forward(100)
 #t.left(90)
