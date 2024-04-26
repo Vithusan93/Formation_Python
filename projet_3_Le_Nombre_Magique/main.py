@@ -1,9 +1,14 @@
 
 def demander_nombre(nb_min, nb_max):
+    nombre_int = 0
 
-    nombre_str = input(f"Quel est le nombre magique entre (entre {nb_min} et {nb_max}) ? " )
-    nombre_int = int(nombre_str)
-    return nombre_int
+    while nombre_int == 0:
+        nombre_str = input(f"Quel est le nombre magique entre (entre {nb_min} et {nb_max}) ? " )
+        try:
+            nombre_int = int(nombre_str)
+        except ValueError:
+            print("Erreur: Vous devez rentrer un nombre")
+        return nombre_int
 
 NOMBRE_MIN=1
 NOMBRE_MAX = 10
